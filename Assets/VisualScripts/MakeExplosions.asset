@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: MakeExplosions
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"in","label":null,"summary":null,"hideLabel":false}],"controlOutputDefinitions":[{"key":"out","label":null,"summary":null,"hideLabel":false}],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-11.20001,"y":144.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-250.0,"y":-30.0},"guid":"06ffa5a2-30e1-4c7d-a024-c7fc6a0e3fbf","$version":"A","$type":"Unity.VisualScripting.GraphInput","$id":"11"},{"defaultValues":{},"position":{"x":105.0,"y":-30.0},"guid":"418dc6f4-9e87-4d4d-a083-c1b84003ef87","$version":"A","$type":"Unity.VisualScripting.GraphOutput","$id":"13"},{"type":"UnityEngine.Quaternion","value":{"x":0.0,"y":0.0,"z":0.0,"w":0.0,"$type":"UnityEngine.Quaternion"},"defaultValues":{},"position":{"x":-90.0,"y":278.0},"guid":"173c40f9-f8d5-4eb3-a05d-f479896fe27b","$version":"A","$type":"Unity.VisualScripting.Literal","$id":"15"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-287.0,"y":274.0},"guid":"cbd2e434-5db4-4b62-b4d8-e295177ab388","$version":"A","$type":"Unity.VisualScripting.GetMember","$id":"17"},{"chainable":false,"parameterNames":["original","position","rotation"],"member":{"name":"Instantiate","parameterTypes":["UnityEngine.Object","UnityEngine.Vector3","UnityEngine.Quaternion"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%original":{"$content":0,"$type":"UnityEngine.Object"},"%position":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"}},"position":{"x":-69.0,"y":96.0},"guid":"2cde372f-7bfa-45b2-9d44-980a5ec8be1b","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"20"},{"specifyFallback":false,"kind":"Scene","defaultValues":{"name":{"$content":"explosionPrefab","$type":"System.String"}},"position":{"x":-323.0,"y":134.0},"guid":"8885c533-6588-47d8-a0e7-b3c78eaa50d6","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"24"},{"sourceUnit":{"$ref":"11"},"sourceKey":"in","destinationUnit":{"$ref":"20"},"destinationKey":"enter","guid":"0802145e-cf2b-429c-ac2b-29470e938574","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"exit","destinationUnit":{"$ref":"13"},"destinationKey":"out","guid":"bfef7d2b-1ece-435f-b0af-a6a60bd1d50f","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"output","destinationUnit":{"$ref":"20"},"destinationKey":"%rotation","guid":"a814f404-adaf-4442-9438-33e38741a9d8","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"value","destinationUnit":{"$ref":"20"},"destinationKey":"%position","guid":"33e3bdab-d12f-4790-bd9e-2a6dbbdaf350","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"24"},"sourceKey":"value","destinationUnit":{"$ref":"20"},"destinationKey":"%original","guid":"e7a718e1-d640-4307-be1a-67d804a50fee","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 8776895255230971918, guid: 5e5bd783fa7462b4381d466e1e76752e, type: 3}
